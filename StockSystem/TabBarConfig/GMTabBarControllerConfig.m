@@ -12,7 +12,7 @@
 #import "GMShopCarVC.h"
 #import "GMMyselfVC.h"
 #import "GMBaseNavigationController.h"
-static CGFloat const CYLTabBarControllerHeight = 49.0f;
+static CGFloat const CYLTabBarControllerHeight = 44.0f;
 @interface GMTabBarControllerConfig ()<UITabBarControllerDelegate>
 
 @property (nonatomic, readwrite, strong) CYLTabBarController *tabBarController;
@@ -31,8 +31,8 @@ static CGFloat const CYLTabBarControllerHeight = 49.0f;
          * 等效于在 `-tabBarItemsAttributesForController` 方法中不传 `CYLTabBarItemTitle` 字段。
          * 更推荐后一种做法。
          */
-        UIEdgeInsets imageInsets =UIEdgeInsetsMake(4.5, 0, -4.5, 0);
-        UIOffset titlePositionAdjustment = UIOffsetMake(0, 5);
+        UIEdgeInsets imageInsets =UIEdgeInsetsZero;
+        UIOffset titlePositionAdjustment = UIOffsetZero;
         CYLTabBarController *tabBarController = [CYLTabBarController  tabBarControllerWithViewControllers:self.viewControllers tabBarItemsAttributes:self.tabBarItemsAttributesForController imageInsets:imageInsets titlePositionAdjustment:titlePositionAdjustment];
         [self customizeTabBarAppearance:tabBarController];
         _tabBarController = tabBarController;
@@ -103,7 +103,7 @@ static CGFloat const CYLTabBarControllerHeight = 49.0f;
 - (void)customizeTabBarAppearance:(CYLTabBarController *)tabBarController {
     // Customize UITabBar height
     // 自定义 TabBar 高度
-    tabBarController.tabBarHeight = CYL_IS_IPHONE_X ? 65 : CYLTabBarControllerHeight;
+    tabBarController.tabBarHeight = CYL_IS_IPHONE_X ? (CYLTabBarControllerHeight +34) : CYLTabBarControllerHeight;
     
     // set the text color for unselected state
     // 普通状态下的文字属性
