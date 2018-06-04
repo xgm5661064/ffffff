@@ -7,10 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A33287EE20C4EE5700E07B7F /* SKAPIBaseRequestDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A33287E620C4EE5700E07B7F /* SKAPIBaseRequestDataModel.m */; };
-		A33287EF20C4EE5700E07B7F /* SKReponseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A33287E820C4EE5700E07B7F /* SKReponseModel.m */; };
-		A33287F020C4EE5700E07B7F /* SKRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A33287EA20C4EE5700E07B7F /* SKRequest.m */; };
-		A33287F120C4EE5700E07B7F /* UncaughtExceptionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = A33287ED20C4EE5700E07B7F /* UncaughtExceptionHandler.m */; };
 		A348ACF520B6642400544704 /* NSArray+ZJHelperKit.m in Sources */ = {isa = PBXBuildFile; fileRef = A348AC8020B6642400544704 /* NSArray+ZJHelperKit.m */; };
 		A348ACF620B6642400544704 /* NSDate+ZJHelperKit.m in Sources */ = {isa = PBXBuildFile; fileRef = A348AC8220B6642400544704 /* NSDate+ZJHelperKit.m */; };
 		A348ACF720B6642400544704 /* NSDictionary+ZJHelperKit.m in Sources */ = {isa = PBXBuildFile; fileRef = A348AC8420B6642400544704 /* NSDictionary+ZJHelperKit.m */; };
@@ -109,14 +105,6 @@
 
 /* Begin PBXFileReference section */
 		595CC3A948D7CFB4E36A065F /* Pods-StockSystem.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StockSystem.release.xcconfig"; path = "Pods/Target Support Files/Pods-StockSystem/Pods-StockSystem.release.xcconfig"; sourceTree = "<group>"; };
-		A33287E520C4EE5700E07B7F /* SKAPIBaseRequestDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKAPIBaseRequestDataModel.h; sourceTree = "<group>"; };
-		A33287E620C4EE5700E07B7F /* SKAPIBaseRequestDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKAPIBaseRequestDataModel.m; sourceTree = "<group>"; };
-		A33287E720C4EE5700E07B7F /* SKReponseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKReponseModel.h; sourceTree = "<group>"; };
-		A33287E820C4EE5700E07B7F /* SKReponseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKReponseModel.m; sourceTree = "<group>"; };
-		A33287E920C4EE5700E07B7F /* SKRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKRequest.h; sourceTree = "<group>"; };
-		A33287EA20C4EE5700E07B7F /* SKRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKRequest.m; sourceTree = "<group>"; };
-		A33287EC20C4EE5700E07B7F /* UncaughtExceptionHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UncaughtExceptionHandler.h; sourceTree = "<group>"; };
-		A33287ED20C4EE5700E07B7F /* UncaughtExceptionHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UncaughtExceptionHandler.m; sourceTree = "<group>"; };
 		A348AC7F20B6642400544704 /* NSArray+ZJHelperKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+ZJHelperKit.h"; sourceTree = "<group>"; };
 		A348AC8020B6642400544704 /* NSArray+ZJHelperKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+ZJHelperKit.m"; sourceTree = "<group>"; };
 		A348AC8120B6642400544704 /* NSDate+ZJHelperKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+ZJHelperKit.h"; sourceTree = "<group>"; };
@@ -309,37 +297,6 @@
 				ECB06FFA6404CA7CF7DD0A62 /* libPods-StockSystem.a */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		A33287E320C4EE5700E07B7F /* Tools */ = {
-			isa = PBXGroup;
-			children = (
-				A33287E420C4EE5700E07B7F /* NetworkRequest */,
-				A33287EB20C4EE5700E07B7F /* UncaughtExceptionHandler */,
-			);
-			path = Tools;
-			sourceTree = "<group>";
-		};
-		A33287E420C4EE5700E07B7F /* NetworkRequest */ = {
-			isa = PBXGroup;
-			children = (
-				A33287E520C4EE5700E07B7F /* SKAPIBaseRequestDataModel.h */,
-				A33287E620C4EE5700E07B7F /* SKAPIBaseRequestDataModel.m */,
-				A33287E720C4EE5700E07B7F /* SKReponseModel.h */,
-				A33287E820C4EE5700E07B7F /* SKReponseModel.m */,
-				A33287E920C4EE5700E07B7F /* SKRequest.h */,
-				A33287EA20C4EE5700E07B7F /* SKRequest.m */,
-			);
-			path = NetworkRequest;
-			sourceTree = "<group>";
-		};
-		A33287EB20C4EE5700E07B7F /* UncaughtExceptionHandler */ = {
-			isa = PBXGroup;
-			children = (
-				A33287EC20C4EE5700E07B7F /* UncaughtExceptionHandler.h */,
-				A33287ED20C4EE5700E07B7F /* UncaughtExceptionHandler.m */,
-			);
-			path = UncaughtExceptionHandler;
 			sourceTree = "<group>";
 		};
 		A348AC7C20B6642400544704 /* ZJKitTool */ = {
@@ -577,7 +534,6 @@
 		A378A8C220B55D28002902FF /* StockSystem */ = {
 			isa = PBXGroup;
 			children = (
-				A33287E320C4EE5700E07B7F /* Tools */,
 				A378A91220B65556002902FF /* Factory */,
 				A378A8FE20B563D0002902FF /* ClassVC */,
 				A378A8F720B561F1002902FF /* TabBarConfig */,
@@ -930,7 +886,6 @@
 				A348AD1A20B6642400544704 /* UIScrollView+ZJScrollView.m in Sources */,
 				A348ACF920B6642400544704 /* NSMutableArray+ZJHelperKit.m in Sources */,
 				A348AD2420B6642400544704 /* UITextField+ZJMasonryKit.m in Sources */,
-				A33287EE20C4EE5700E07B7F /* SKAPIBaseRequestDataModel.m in Sources */,
 				A348AD4020BD39C600544704 /* XMGShopCell.m in Sources */,
 				A348AD1220B6642400544704 /* ZJCommonKit.m in Sources */,
 				A348AD1020B6642400544704 /* ZJKitBaseController.m in Sources */,
@@ -947,7 +902,6 @@
 				A348AD1D20B6642400544704 /* UIViewController+ZJViewController.m in Sources */,
 				A378A91F20B655C0002902FF /* UIScrollView+GMEmptyDataSet.m in Sources */,
 				A348AD2520B6642400544704 /* UITextView+ZJMasonryKit.m in Sources */,
-				A33287F120C4EE5700E07B7F /* UncaughtExceptionHandler.m in Sources */,
 				A348AD0B20B6642400544704 /* UIView+ZJHelperKitUIkit.m in Sources */,
 				A378A90520B56462002902FF /* GMHomeVC.m in Sources */,
 				A378A8D320B55D29002902FF /* main.m in Sources */,
@@ -962,7 +916,6 @@
 				A348AD0420B6642400544704 /* UIControl+ZJHelperBlockKit.m in Sources */,
 				A378A8C520B55D28002902FF /* AppDelegate.m in Sources */,
 				A348AD1F20B6642400544704 /* UICollectionView+ZJMasonryKit.m in Sources */,
-				A33287F020C4EE5700E07B7F /* SKRequest.m in Sources */,
 				A378A91120B5671F002902FF /* GMBaseNavigationController.m in Sources */,
 				A348AD2A20B6642400544704 /* ZJTimeCountDown.m in Sources */,
 				A348ACFB20B6642400544704 /* NSNumber+ZJHelperKit.m in Sources */,
@@ -974,7 +927,6 @@
 				A348ACF520B6642400544704 /* NSArray+ZJHelperKit.m in Sources */,
 				A348AD0820B6642400544704 /* UITableViewCell+ZJBaseFunctions.m in Sources */,
 				A378A90B20B56491002902FF /* GMShopCarVC.m in Sources */,
-				A33287EF20C4EE5700E07B7F /* SKReponseModel.m in Sources */,
 				A348AD0D20B6642400544704 /* UIControl+ZJActionBlock.m in Sources */,
 				A348AD0720B6642400544704 /* UIImageView+ZJCornerRadiusHelperKit.m in Sources */,
 				A348AD1920B6642400544704 /* UILabel+ZJLabel.m in Sources */,
